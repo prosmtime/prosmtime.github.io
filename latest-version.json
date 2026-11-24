@@ -1,9 +1,9 @@
 {
-  "version": "2.4.7",
-  "releasedAt": "2026-11-24T10:28:13.000Z",
+  "version": "2.4.9",
+  "releasedAt": "2026-11-24T19:04:09.942Z",
   "notes": {
-    "ar": "• إصلاح لوحة الحساب التي كانت تُقطع على الهاتف\n• إشعار التحديث بزر «حدّث الآن» فقط\n• يظهر «موقع خارجي» بجانب من يسجّل حضوره خارج المواقع\n• عرض تقييم خفض الباقة للمالك في إعدادات الباقة\n• تحسينات في الأمان والاستقرار",
-    "en": "• Fixed the account panel being cut off on phones\n• The update notice has just the “Update now” button\n• “Outside any site” shows next to people who clock in away from the sites\n• The owner can see a plan downgrade assessment in Plan settings\n• Security and stability improvements"
+    "ar": "• نص أزرار الحضور الدائرية صار داخل الزر\n• كارت المؤسسة يعرض الإصدار والباقة\n• طباعة حقيقية للتقارير وزر «تنزيل PDF لكل التقارير» وبيانات أوفى في كل تقرير\n• مركز مساعدة واحد يضم الدليل وسياسة الخصوصية وشروط الاستخدام (بعد تحديثها)\n• تحسينات في الأمان والاستقرار",
+    "en": "• Words of the round clock buttons stay inside the button\n• The organisation card shows the version and plan\n• Real printing for reports, a “Download all reports (PDF)” button and fuller report data\n• One Help center with the guide, the Privacy Policy and the Terms of Use (updated)\n• Security and stability improvements"
   },
   "downloads": {
     "windows": "https://time.prosm.net",

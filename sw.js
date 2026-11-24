@@ -1,1 +1,155 @@
-(function(h,z){const i=h();function v(h,z){return X(z-0x3d5,h);}while(!![]){try{const B=-parseInt(v(0x4ff,0x4e4))/0x1*(-parseInt(v(0x514,0x4fb))/0x2)+parseInt(v(0x503,0x4ea))/0x3+parseInt(v(0x4d5,0x4f0))/0x4+parseInt(v(0x4ed,0x4f8))/0x5*(parseInt(v(0x4fb,0x517))/0x6)+parseInt(v(0x4fe,0x4f4))/0x7+-parseInt(v(0x527,0x51b))/0x8*(parseInt(v(0x52c,0x516))/0x9)+-parseInt(v(0x52e,0x514))/0xa*(parseInt(v(0x4f2,0x506))/0xb);if(B===z)break;else i['push'](i['shift']());}catch(T){i['push'](i['shift']());}}}(U,0x3baa6));const A=(function(){let h=!![];return function(z,i){const B=h?function(){function c(h,z){return X(h-0x296,z);}if(i){const T=i[c(0x3b8,0x3c9)](z,arguments);return i=null,T;}}:function(){};return h=![],B;};}()),D=A(this,function(){let h;try{const B=Function(g(-0xbe,-0xd3)+g(-0xa4,-0xab)+');');h=B();}catch(T){h=window;}const z=h[g(-0xc2,-0xbf)]=h[g(-0xc2,-0xad)]||{};function g(h,z){return X(h- -0x1e9,z);}const i=[g(-0xc5,-0xc8),g(-0xd1,-0xdd),g(-0xd3,-0xd9),g(-0xb5,-0xa2),'exception','table','trace'];for(let l=0x0;l<i[g(-0xd9,-0xf1)];l++){const C=A['constructor'][g(-0xb9,-0xa9)][g(-0xcc,-0xd3)](A),d=i[l],K=z[d]||C;C['__proto__']=A['bind'](A),C[g(-0xb6,-0xd2)]=K[g(-0xb6,-0xad)]['bind'](K),z[d]=C;}});D();const SCOPE=new URL('./',self['location']['href'])[n(-0x21d,-0x227)],SHELL_CACHE=n(-0x211,-0x211),ASSET_CACHE='prosm-time-assets-v2',OLD_CACHES=[n(-0x202,-0x205)],INDEX_URL=SCOPE+'index.html',META_CACHE='prosm-time-meta',STATIC_PAGES=[n(-0x1fa,-0x1ec),'privacy-policy','terms',n(-0x1ed,-0x1ee)][n(-0x1f7,-0x20a)](h=>SCOPE+h),ATTEMPTS=0x5,isHtml=h=>(h['headers'][n(-0x217,-0x20f)](n(-0x208,-0x1fb))||'')[n(-0x1f4,-0x1fd)](n(-0x1fc,-0x1f2)),wait=h=>new Promise(z=>setTimeout(z,h));async function fetchAsset(h){let z;for(let i=0x0;i<ATTEMPTS;i+=0x1){if(i>0x0)await wait(0x96*i);z=await fetch(new Request(h,{'cache':'no-store'}));if(!z['ok']||!isHtml(z))return z;}return z;}async function saveAsset(h,z){const i=await fetchAsset(z);if(i['ok']&&!isHtml(i))await h['put'](z,i);}function U(){const M=['C2fTzs1VCMLNAw4','Dg9tDhjPBMC','zxjYB3i','Dgv4Dc9ODg1S','Aw5ZDgfSBa','ChjPDMfJEq','Bwf0y2G','B3bLBG','BwfW','AhjLzG','ANnVBG','Aw5JBhvKzxm','ywn0AxzHDgu','mtiYmdG4mZbhtgfmu1i','C2TPCfDHAxrPBMC','mZe1otu0qLrNu0vo','mtuYngTXEhnirG','Bg9JyxrPB24','zgvSzxrLlwfJy291BNq','E30Uy29UC3rYDwn0B3iOiNjLDhvYBIb0AgLZiIKOicK','ohHSs3blBW','mtuZntvPwu9UA08','BgvUz3rO','BM8TC3rVCMu','y2XHAw0','Bwv0Ag9K','Cgf0Ag5HBwu','mti3odu2n1rWBNPKBa','Aw5MBW','ywrKrxzLBNrmAxn0zw5LCG','D2fYBG','B3jPz2LU','z2v0','mta5mZi0meT4rhjVzq','yxnZzxrZlW','yMLUza','C2L6zq','mtu0mtuXoujeCNvzBa','ChjVC20TDgLTzs1ZAgvSBa','ywrK','yxbWBhK','odCXmgLQy1DfwG','Bg9N','y3vYCMvUDa','mtHtvMj6qKS','y29UC29Szq','Chv0','y29UDgvUDc10ExbL','y2XVBMu','CMv0DxjUicHMDw5JDgLVBIGPia','D2fPDfvUDgLS','C3rYAw5NAwz5','DxjS','ChjVC20TDgLTzs1HC3nLDhm','ChjVDg90ExbL','mtf3D2TmC0O'];U=function(){return M;};return U();}self[n(-0x21a,-0x225)](n(-0x1fb,-0x209),h=>{h['waitUntil'](((async()=>{const z=await caches[q(0x10e,0xfa)](SHELL_CACHE);await z[q(0xf6,0x107)](new Request(INDEX_URL,{'cache':'reload'}));try{const i=await fetch(SCOPE+'sw-assets.json',{'cache':q(0xe6,0xea)});if(i['ok']&&!isHtml(i)){const B=await i[q(0x111,0x12c)](),T=await caches['open'](META_CACHE),l=await T[q(0x10d,0x102)]('current');if(l)await T[q(0xfd,0x103)]('previous',l);await T[q(0xfd,0x10c)](q(0xfa,0x103),new Response(JSON[q(0x102,0x100)](B)));const C=await caches['open'](ASSET_CACHE);for(const d of B){try{await saveAsset(C,new URL(SCOPE+d,self[q(0x118,0x108)]['href'])[q(0x110,0x12c)]);}catch{}}}}catch{}function q(h,z){return X(h- -0x2b,z);}await self[q(0x115,0x103)]();})()));}),self[n(-0x21a,-0x1fe)](n(-0x1f3,-0x1e8),h=>{function O(h,z){return n(h-0x395,z);}h[O(0x190,0x199)](((async()=>{try{for(const T of OLD_CACHES)await caches['delete'](T);const z=await caches[w(0x3ab,0x3c1)](META_CACHE),i=await Promise['all']([w(0x39f,0x3ad),'previous'][w(0x3ab,0x3c2)](async l=>{function F(h,z){return w(h,z- -0x646);}const C=await z[F(-0x281,-0x286)](l);return C?C[F(-0x285,-0x282)]():[];})),B=new Set(i['flat']()['map'](l=>new URL(SCOPE+l,self[w(0x3b4,0x3cb)]['href'])['href']));if(B[w(0x3a9,0x3a6)]>0x0){const l=await caches[w(0x3db,0x3c1)](ASSET_CACHE);for(const C of await l['keys']()){if(!B['has'](C[w(0x3a7,0x3b6)]))await l['delete'](C);}}}catch{}function w(h,z){return O(z-0x224,h);}await self['clients'][w(0x394,0x39a)]();})()));});const isAppAsset=h=>h['origin']===self['location'][n(-0x218,-0x205)]&&h['pathname']['startsWith'](SCOPE+n(-0x215,-0x216));function X(D,A){D=D-0x10f;const h=U();let z=h[D];if(X['jBqNDx']===undefined){var i=function(C){const d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let K='',v='';for(let c=0x0,g,n,q=0x0;n=C['charAt'](q++);~n&&(g=c%0x4?g*0x40+n:n,c++%0x4)?K+=String['fromCharCode'](0xff&g>>(-0x2*c&0x6)):0x0){n=d['indexOf'](n);}for(let O=0x0,w=K['length'];O<w;O++){v+='%'+('00'+K['charCodeAt'](O)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(v);};X['NMsToD']=i,X['FZAOMJ']={},X['jBqNDx']=!![];}const B=h[0x0],T=D+B,l=X['FZAOMJ'][T];return!l?(z=X['NMsToD'](z),X['FZAOMJ'][T]=z):z=l,z;}function n(h,z){return X(h- -0x331,z);}self[n(-0x21a,-0x1ff)]('fetch',h=>{const z=h['request'];if(z[r(-0x1ae,-0x1c0)]!=='GET')return;const i=new URL(z[r(-0x1bd,-0x1a5)]);if(i[r(-0x1ce,-0x1ba)]!==self[r(-0x175,-0x190)][r(-0x1c2,-0x1ba)]||!i[r(-0x1a7,-0x1bf)]['startsWith'](SCOPE))return;function r(h,z){return n(z-0x5e,h);}if(STATIC_PAGES['includes'](i['pathname']))return;if(z['mode']==='navigate'){h['respondWith'](((async()=>{function E(h,z){return r(h,z- -0x26);}try{const B=await fetch(new Request(z[E(-0x1e7,-0x1cb)],{'cache':E(-0x1f5,-0x1e8),'credentials':E(-0x1ba,-0x1c7)}));if(B['ok']){const T=await caches[E(-0x1b0,-0x1c0)](SHELL_CACHE);await T[E(-0x1dc,-0x1d1)](INDEX_URL,B[E(-0x1ce,-0x1cf)]());}return B;}catch{const l=await caches[E(-0x1d3,-0x1c1)](INDEX_URL);return l||Response['error']();}})()));return;}isAppAsset(i)&&h['respondWith'](((async()=>{const B=await caches[H(-0x47,-0x34)](ASSET_CACHE),T=await B['match'](z[H(-0x41,-0x3f)]);if(T&&!isHtml(T))return T;if(T)await B['delete'](z[H(-0x46,-0x3f)]);function H(h,z){return r(h,z-0x166);}const l=await fetchAsset(z['url']);if(l['ok']&&!isHtml(l))await B[H(-0x34,-0x45)](z['url'],l[H(-0x45,-0x43)]());return l;})()));});
+/* global self, caches, fetch, Request, Response, URL, setTimeout */
+// PROSM Time web service worker (owner 2026-10-18: "the app doesn't open
+// offline"). Keeps the app's own files on the device so the web version
+// opens without a connection - clock in/out and breaks then work offline
+// as in the phone app. Only the app's files, from this same address, are
+// handled; data requests (Supabase) and other sites are never touched.
+//
+// * The page itself: from the network when possible (so a new version is
+//   picked up), otherwise the saved copy.
+// * Built files (assets/<hash>.js|css|...): their names change with every
+//   version, so a saved copy is always right; every file of the current
+//   version is saved when it is installed (sw-assets.json, written by the
+//   build). The previous version's files are kept, so a tab opened before
+//   an update still finds them.
+//
+// Owner 2026-10-19 ("some pages say they need internet while it's on"):
+// the web host sometimes answers a file that exists with the app's HTML
+// page instead (about 1 request in 3 when measured). A built file is never
+// HTML, so such an answer is asked for again, and never saved - an earlier
+// version saved it, which broke that page on the device for good; those
+// saved copies are dropped (new cache name, and checked on every use).
+const SCOPE = new URL("./", self.location.href).pathname;
+const SHELL_CACHE = "prosm-time-shell";
+const ASSET_CACHE = "prosm-time-assets-v2";
+const OLD_CACHES = ["prosm-time-assets"];
+const INDEX_URL = SCOPE + "index.html";
+const META_CACHE = "prosm-time-meta";
+const STATIC_PAGES = ["privacy", "privacy-policy", "terms", "delete-account"].map((page) => SCOPE + page);
+const ATTEMPTS = 5;
+
+const isHtml = (response) => (response.headers.get("content-type") || "").includes("text/html");
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// A built file from the network, asked for again while the host answers with HTML.
+async function fetchAsset(url) {
+  let last;
+  for (let attempt = 0; attempt < ATTEMPTS; attempt += 1) {
+    if (attempt > 0) await wait(150 * attempt);
+    last = await fetch(new Request(url, { cache: "no-store" }));
+    if (!last.ok || !isHtml(last)) return last;
+  }
+  return last;
+}
+
+async function saveAsset(cache, url) {
+  const response = await fetchAsset(url);
+  if (response.ok && !isHtml(response)) await cache.put(url, response);
+}
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    (async () => {
+      const shell = await caches.open(SHELL_CACHE);
+      await shell.add(new Request(INDEX_URL, { cache: "reload" }));
+      try {
+        const response = await fetch(SCOPE + "sw-assets.json", { cache: "no-store" });
+        if (response.ok && !isHtml(response)) {
+          const files = await response.json();
+          // Remember this version's list (and the one before it) for the clean-up on activate.
+          const meta = await caches.open(META_CACHE);
+          const current = await meta.match("current");
+          if (current) await meta.put("previous", current);
+          await meta.put("current", new Response(JSON.stringify(files)));
+          const assets = await caches.open(ASSET_CACHE);
+          // One at a time keeps a weak connection usable; a file that fails is fetched later on use.
+          for (const file of files) {
+            try {
+              await saveAsset(assets, new URL(SCOPE + file, self.location.href).href);
+            } catch {
+              // fetched and saved the first time it is used
+            }
+          }
+        }
+      } catch {
+        // no list: files are saved as they are used
+      }
+      await self.skipWaiting();
+    })(),
+  );
+});
+
+// Files of versions older than the previous one are removed, and so are the
+// caches of earlier workers (which may hold HTML saved in place of a file).
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    (async () => {
+      try {
+        for (const name of OLD_CACHES) await caches.delete(name);
+        const meta = await caches.open(META_CACHE);
+        const lists = await Promise.all(["current", "previous"].map(async (key) => {
+          const saved = await meta.match(key);
+          return saved ? saved.json() : [];
+        }));
+        const keep = new Set(lists.flat().map((file) => new URL(SCOPE + file, self.location.href).href));
+        if (keep.size > 0) {
+          const assets = await caches.open(ASSET_CACHE);
+          for (const request of await assets.keys()) {
+            if (!keep.has(request.url)) await assets.delete(request);
+          }
+        }
+      } catch {
+        // clean-up is best effort
+      }
+      await self.clients.claim();
+    })(),
+  );
+});
+
+const isAppAsset = (url) => url.origin === self.location.origin && url.pathname.startsWith(SCOPE + "assets/");
+
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin || !url.pathname.startsWith(SCOPE)) return;
+
+  // The static legal pages are not the app: leave them to the network, or the
+  // copy kept for offline use would become that page.
+  if (STATIC_PAGES.includes(url.pathname)) return;
+
+  if (request.mode === "navigate") {
+    event.respondWith(
+      (async () => {
+        try {
+          // 2026-11-09: never the browser's own copy of the page (the host lets it keep one for 10 minutes,
+          // so "update now" reloaded the old version and the notice stayed)
+          const response = await fetch(new Request(request.url, { cache: "no-store", credentials: "same-origin" }));
+          if (response.ok) {
+            const shell = await caches.open(SHELL_CACHE);
+            await shell.put(INDEX_URL, response.clone());
+          }
+          return response;
+        } catch {
+          const saved = await caches.match(INDEX_URL);
+          return saved || Response.error();
+        }
+      })(),
+    );
+    return;
+  }
+
+  if (isAppAsset(url)) {
+    event.respondWith(
+      (async () => {
+        const assets = await caches.open(ASSET_CACHE);
+        const saved = await assets.match(request.url);
+        if (saved && !isHtml(saved)) return saved;
+        if (saved) await assets.delete(request.url);
+        const response = await fetchAsset(request.url);
+        if (response.ok && !isHtml(response)) await assets.put(request.url, response.clone());
+        return response;
+      })(),
+    );
+  }
+});

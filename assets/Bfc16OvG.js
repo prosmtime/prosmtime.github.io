@@ -1,0 +1,1 @@
+import{y as e,j as t,N as n}from"./DmERZ-Hl.js";function o(){const[o]=e(),a=o.get("exceptionId");return t.jsx(n,{to:"/me?tab=attendance&view=exceptions"+(a?`&exceptionId=${encodeURIComponent(a)}`:""),replace:!0})}export{o as default};
