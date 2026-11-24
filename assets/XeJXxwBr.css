@@ -1,0 +1,1 @@
+._cards_1g4m6_5{display:grid;grid-template-columns:minmax(0,1fr);max-width:980px;gap:var(--space-3);align-items:start;margin-top:var(--space-3)}._cards_1g4m6_5>*{margin:0!important;min-width:0}._cards_1g4m6_5>.wide,._cards_1g4m6_5>*:has(>[data-wide]){grid-column:1 / -1}

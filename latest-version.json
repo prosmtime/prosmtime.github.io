@@ -1,0 +1,13 @@
+{
+  "version": "2.4.7",
+  "releasedAt": "2026-11-24T10:28:13.000Z",
+  "notes": {
+    "ar": "• إصلاح لوحة الحساب التي كانت تُقطع على الهاتف\n• إشعار التحديث بزر «حدّث الآن» فقط\n• يظهر «موقع خارجي» بجانب من يسجّل حضوره خارج المواقع\n• عرض تقييم خفض الباقة للمالك في إعدادات الباقة\n• تحسينات في الأمان والاستقرار",
+    "en": "• Fixed the account panel being cut off on phones\n• The update notice has just the “Update now” button\n• “Outside any site” shows next to people who clock in away from the sites\n• The owner can see a plan downgrade assessment in Plan settings\n• Security and stability improvements"
+  },
+  "downloads": {
+    "windows": "https://time.prosm.net",
+    "android": "https://play.google.com/store/apps/details?id=net.prosm.time",
+    "web": "https://time.prosm.net"
+  }
+}
